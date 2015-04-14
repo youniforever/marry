@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>장하련, 손나래 결혼식에 초대합니다.</title>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+
+<h1 class="hide">장하련, 손나래 : 저희 결혼합니다.</h1>
+<!-- header -->
+<div id="myScrollspy" class="scrollspy">
+	<ul class="nav" data-spy="affix">
+		<li class="active"><a href="#section-1">홈</a></li>
+		<li><a href="#section-2">모시는 글</a></li>
+		<li><a href="#section-3">오시는 길</a></li>
+	</ul>
+</div>
+<!-- //header -->
+<div id="section-1" class="wrap-section-1">
+	<!-- main image -->
+	<div class="img-main">
+		<img src="images/img-main.png" width="100%" alt="저희 결혼합니다.">
+	</div>
+	<!-- //main image -->
+	<!-- Slide -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/img/1.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/2.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/3.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/4.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/5.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/6.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/7.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/8.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/9.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/10.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/11.jpg" width="100%">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/img/12.jpg" width="100%">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!-- //Slide -->
+</div>
+<!-- 모시는글 -->
+<div id="section-2" class="attend-area">
+	<div class="inner">
+		<h2>모시는 글</h2>
+		<p>2015.04.18 (토) 오후 2시</p>
+		<p>광주 아름다운컨벤션 2층 베르사체홀</p>
+	</div>
+</div>
+<!-- //모시는글 -->
+<div id="section-3">
+	<!-- 오시는길 -->
+	<div class="access-area">
+		<div class="inner">
+			<h2>오시는 길</h2>
+			<p>광주광역시 광산구 상무대로 509(우산동 220-14)</p>
+			<p>TEL. 02.946.3333</p>
+			<a href="http://map.naver.com/?menu=location&mapMode=0&lat=35.1440394&lng=126.8220055&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=35.1437742%2C126.822%3AZ11%3A0.0228521%2C0.0101696&tab=1&pinId=21268523&pinType=site&enc=b64" class="btn-naver-map" target="_blank">네이버 지도 보기</a>
+			<a id="kakao-link-btn" class="btn-kakao" href="javascript:;">
+				<img src="images/btn-kakao.png" width="160" height="37" />
+			</a>
+		</div>
+	</div>
+	<!-- //오시는길 -->
+	<!-- 신랑 신부 소개 -->
+	<div class="couple-intro">
+		<div class="inner">
+			<a href="tel:01090063062" class="thumb">
+				<img src="images/img-man.png" width="197" alt="신랑 장하련 01090063062">
+			</a>
+			<a href="tel:01040190517" class="thumb">
+				<img src="images/img-woman.png" width="197" alt="신부 손나래 01040190517">
+			</a>
+		</div>
+	</div>
+	<!-- //신랑 신부 소개 -->
+	<!-- footer -->
+	<div id="footer">Copyright (c) 2015 JHR & SNR All rights reserved.</div>
+	<!-- //footer -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true
+	});
+
+
+	Kakao.init('9f7c83c28398d5e3b2b61081e4142d09');
+	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createTalkLinkButton({
+      container: '#kakao-link-btn',
+      label: '장하련, 손나래의 결혼식에 초대합니다.',
+      image: {
+        src: 'http://markone.dothome.co.kr/marry/images/img/main.png',
+        width: '680',
+        height: '680'
+      },
+      webButton: {
+        text: '봄날의 결혼식',
+        url: 'http://markone.dothome.co.kr/marry' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+      }
+    });
+</script>
+</body>
+</html>
