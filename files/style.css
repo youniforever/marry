@@ -117,7 +117,7 @@ img {
     background: -webkit-linear-gradient(left,  #5a606a 0%,#7b8189 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(left,  #5a606a 0%,#7b8189 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(left,  #5a606a 0%,#7b8189 100%); /* IE10+ */
-    background: linear-gradient(to right,  #bfd4da 0%,#7b8189 100%); /* W3C */
+    background: linear-gradient(to right,  #bfd4da 0%,#bfd4da 100%); /* W3C */
 }
 .swiper-slide img {
     max-width:100%;
